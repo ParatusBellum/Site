@@ -27,3 +27,4 @@ function hideSubMenu(el){
 function carrega() {
     document.getElementById('rodape').innerHTML = "<div class='topo'><p>&copy; 2017 Claudio Nascimento<p></div>";
 }
+
