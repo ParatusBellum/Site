@@ -10,9 +10,9 @@
 	      <link rel="stylesheet" href="css/uploader.css" rel="stylesheet" />
 	      <link rel="stylesheet" href="css/demo.css" rel="stylesheet" />
 	</head>
-	<body onLoad="carrega();">
+	<body onLoad="carrega(2);" role="document">
   <div class="divMenu">
-  <a href="site.html" alt="freelogodesign.org" class="tooltips" ><img id="imgLogo" src="Logo1.png"/><span>Acessar a Home</a>
+  <a href="site.html" alt="freelogodesign.org" class="tooltips" ><img id="imgLogo" src="imagens/Logo1.png"/><span>Acessar a Home</a>
 	  <nav role="navigation" class="nav">
 	    <ul class="nav-items">
 	        <li class="nav-item">
@@ -51,31 +51,30 @@
 	  </nav>
     </div>
 	  <!-- Input file, com o atributo multiple para indentificar que o usuário vai poder adicionar mais de um arquivo por vez -->
-  <body role="document">
 
     <!-- Fixed navbar -->
 
     <div class="container demo-wrapper">
       <div class="page-header">
-        <h1>Demo <small>JQuery Drag and Drop Files</small></h1>
+        <h1><small>JQuery Upload de Arquivos</small></h1>
       </div>
     
       <div class="row demo-columns">
         <div class="col-md-6">
           <!-- D&D Zone-->
           <div id="drag-and-drop-zone" class="uploader">
-            <div>Drag &amp; Drop Images Here</div>
-            <div class="or">-or-</div>
+            <div>Arraste &amp; Largue Seus Arquivos Aqui</div>
+            <div class="or">-ou-</div>
             <div class="browser">
               <label>
-                <span>Click to open the file Browser</span>
+                <span>Clique para abrir a Pequisa de Arquivos</span>
                 <input type="file" name="files[]" multiple="multiple" title='Click to add Files'>
               </label>
             </div>
           </div>
           <!-- /D&D Zone -->
 
-          <!-- Debug box -->
+          <!-- Debug box 
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Debug</h3>
@@ -85,7 +84,7 @@
               </ul>
             </div>
           </div>
-          <!-- /Debug box -->
+          /Debug box -->
         </div>
         <!-- / Left column -->
 
@@ -109,12 +108,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
 
-    <script type="text/javascript" src="../demos/js/demo.min.js"></script>
-    <script type="text/javascript" src="../../src/dmuploader.min.js"></script>
+    <script type="text/javascript" src="js/demo.min.js"></script>
+    <script type="text/javascript" src="js/dmuploader.min.js"></script>
 
-    <script type="text/javascript">
+    <script type="text/javascript" src="js/index.js">
       $('#drag-and-drop-zone').dmUploader({
-        url: '/demos/dnd/upload.php',
+        url: '/demos/upload.php',
         dataType: 'json',
         allowedTypes: 'image/*',
         /*extFilter: 'jpg;png;gif',*/
@@ -165,6 +164,8 @@
         }
       });
     </script>
+
     </body>
     <div id="rodape"></div>
+    <div id="referenciaUpload"></div>
 </html>

@@ -24,7 +24,12 @@ function hideSubMenu(el){
     el.classList.remove('show-submenu');
 }
 
-function carrega() {
-    document.getElementById('rodape').innerHTML = "<div class='topo'><p>&copy; 2017 Claudio Nascimento<p></div>";
+function carrega(pg) {
+    if(pg === 1){
+        document.getElementById('rodape').innerHTML = "<div class='topo'><p>Site criado em 2017 por Claudio Freitas &copy;<p></div>";
+    }else{
+        document.getElementById('rodape').innerHTML = "<div class='topo'><p>Site criado em 2017 por Claudio Freitas &copy;<p><p>Sistema de Upload feito por </p></div>";
+    }
+
 }
 
